@@ -1,10 +1,12 @@
 .card {
+  font-family: 'Times New Roman', Times, serif;
   display: inline-block;
   text-align: center;
   width: 3em;
   font-size: 2em;
+  background-color: rgb(215, 245, 255);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 1em;
+  margin: 0.5em;
   user-select: none;
 }
 
