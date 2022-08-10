@@ -37,11 +37,17 @@ export default function WordCard(props) {
             }
         }
     }
+    const deActivationHandler = (c) => {
+        console.log(`${c} has been deactivated.`)
+        setState({...state, guess: state.guess.slice(0, -1)})
+    }
+    const text = `Total Attempt: ${state.attempt}`
     return (
         <div>
             {
-                state.chars.map((c, i) => <CharacterCard value={c} key={i} activationHandler={activationHandler} attempt={state.attempt}/>)
+                state.chars.map((c, i) => <CharacterCard value={c} key={i} activationHandler={activationHandler} deActivationHandler={deActivationHandler} attempt={state.attempt}/>)
             }
+            <h2 className="centerText">{text}<br/>{state.completed ? 'YAY!':''}</h2>
         </div>
     )
 }

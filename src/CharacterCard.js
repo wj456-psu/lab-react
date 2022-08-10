@@ -9,6 +9,10 @@ export default function CharacterCard(props) {
             setActive(true)
             props.activationHandler(props.value)
         }
+        else {
+            setActive(false)
+            props.deActivationHandler(props.value)
+        }
     }
 
     useEffect(() => {

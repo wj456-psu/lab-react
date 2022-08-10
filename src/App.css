@@ -1,3 +1,7 @@
+.centerText {
+  text-align: center;
+}
+
 .card {
   font-family: 'Times New Roman', Times, serif;
   display: inline-block;
